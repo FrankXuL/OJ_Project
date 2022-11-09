@@ -1,0 +1,4 @@
+#当前运行环境的文件
+spring:
+  profiles:
+    active:  dev

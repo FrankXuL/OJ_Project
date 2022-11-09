@@ -1,0 +1,18 @@
+#开发环境
+
+spring:
+  # 应用名称
+  application:
+    name: oj_project
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/oj_system?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+# 配置 mybatis xml 的⽂件路径，在 resources/mapper 创建所有表的 xml ⽂件
+mybatis:
+  mapper-locations: classpath:mapper/**Mapper.xml

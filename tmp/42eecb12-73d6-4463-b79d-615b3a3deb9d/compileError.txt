@@ -1,0 +1,4 @@
+.\tmp\42eecb12-73d6-4463-b79d-615b3a3deb9d\Solution.java:3: error: incompatible types: int cannot be converted to int[]
+        return 3;
+               ^
+1 error

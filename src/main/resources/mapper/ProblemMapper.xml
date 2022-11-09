@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.oj_project.mapper.ProblemMapper">
+    <select id="SelectAll" resultType="com.example.oj_project.model.problem">
+        select * from oj_table
+    </select>
+    <select id="SelectOne" resultType="com.example.oj_project.model.problem">
+        select * from oj_table where id = #{id}
+    </select>
+    <insert id="insert">
+        insert into oj_table values (NULL,#{title},#{level},#{description},#{templateCode},#{testCode})
+    </insert>
+    <delete id="delete">
+        delete from oj_table where id =#{id}
+    </delete>
+</mapper>
